@@ -1,0 +1,15 @@
+$ git merge edits
+Auto-merging examples.md
+CONFLICT (content): Merge conflict in examples.md
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+$ git add README.md 
+$ git add examples.md 
+$ git commit "Resovle merge conflict"
+fatal: cannot do a partial commit during a merge.
+$ git commit -m "Resovle merge conflict"
+[master c82131c] Resovle merge conflict
+$ git branch -d edits
+Deleted branch edits (was 0dc9f6a).
+$ ^C
